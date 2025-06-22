@@ -1,0 +1,139 @@
+.profile-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 255, 200, 0.1);
+  max-width: 95%;
+  margin: 2rem auto;
+  color: white;
+  backdrop-filter: blur(12px);
+  animation: slideUp 0.5s ease;
+}
+
+.profile-container h2 {
+  font-size: 1.6rem;
+  color: #7effa1;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profile-container p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.select-group {
+  margin: 1.5rem 0;
+}
+
+.select-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.select-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 1rem;
+  outline: none;
+}
+
+.current-pref {
+  margin-bottom: 1rem;
+  color: #c2f2d0;
+}
+
+.profile-btn {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.8rem;
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.reset-btn {
+  background-color: #ff5c5c;
+}
+
+.reset-btn:hover {
+  background-color: #e63946;
+}
+
+.save-msg {
+  text-align: center;
+  color: #7effa1;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.logs-section {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+.logs-section h3 {
+  color: #00ffc8;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.log-item {
+  background-color: #1a1a1a;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.log-item strong {
+  color: #7effa1;
+}
+
+.log-item em {
+  color: #ddd;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .profile-btn {
+    font-size: 0.95rem;
+  }
+
+  .log-item {
+    font-size: 0.85rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

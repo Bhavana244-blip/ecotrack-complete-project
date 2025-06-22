@@ -1,0 +1,76 @@
+/* Navbar container fixed at top, full width */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111; /* dark sexy background */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* shadow down */
+  z-index: 9999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+/* Links style */
+.navbar a {
+  color: #7effa1; /* that green glow */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover & focus */
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #38f3b9;
+  color: #111;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #38f3b9;
+}
+
+/* Logout button styling */
+.logout-btn {
+  background-color: #e53e3e; /* fire red alert */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+/* Logout hover */
+.logout-btn:hover,
+.logout-btn:focus {
+  background-color: #c53030;
+  outline: none;
+  box-shadow: 0 0 10px #c53030;
+}
+
+/* Push page content down so nav doesn’t cover it */
+body, #root, .App {
+  padding-top: 56px; /* height of navbar + some breathing room */
+}
+
+/* Responsive for tiny phones: stack vertically */
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .navbar a,
+  .logout-btn {
+    margin: 0.3rem 0;
+  }
+}
